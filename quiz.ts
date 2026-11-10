@@ -107,7 +107,6 @@ const bunga = new FireFlower();
 const bintang = new SuperStar();
 
 mario.moveRight();
-mario.moveRight();
 mario.moveLeft();
 
 jamur.use(mario);
@@ -115,7 +114,6 @@ bunga.use(mario);
 mario.getAttacked();
 
 bintang.use(mario);
-mario.getAttacked();
 
 // ===== POLYMORPHISM =====
 // Satu array bertipe Item, method use() sama tapi hasilnya beda-beda
