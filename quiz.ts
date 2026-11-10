@@ -24,7 +24,7 @@
 // Kerjakan Quiznya Disini
 // ===== CLASS MARIO =====
 class Mario {
-    // attribute
+    
     HP: number;
     speed: number;
     positionX: number;
@@ -32,7 +32,7 @@ class Mario {
     invincible: boolean;
     currentForm: string;
 
-    // constructor: nilai awal (default) Mario sesuai soal
+    
     constructor() {
         this.HP = 1;
         this.speed = 5;
@@ -66,7 +66,7 @@ class Mario {
     }
 }
 
-// ===== INHERITANCE: class induk Item =====
+
 class Item {
     // method ini akan di-override oleh class anak
     use(mario: Mario): void {
@@ -100,7 +100,7 @@ class SuperStar extends Item {
     }
 }
 
-// ===== OBJECT =====
+
 const mario = new Mario();
 const jamur = new SuperMushroom();
 const bunga = new FireFlower();
@@ -112,11 +112,9 @@ mario.moveLeft();
 jamur.use(mario);
 bunga.use(mario);
 mario.getAttacked();
-
 bintang.use(mario);
 
-// ===== POLYMORPHISM =====
-// Satu array bertipe Item, method use() sama tapi hasilnya beda-beda
+
 const semuaItem: Item[] = [new SuperMushroom(), new FireFlower(), new SuperStar()];
 const marioBaru = new Mario();
 
